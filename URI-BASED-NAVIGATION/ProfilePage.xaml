@@ -1,0 +1,19 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="URI_BASED_NAVIGATION.ProfilePage"
+             Title="Profile">
+
+    <VerticalStackLayout Padding="20">
+        <Label Text="Profile" FontSize="24" HorizontalOptions="Center"/>
+
+        <Label Text="Username:" FontAttributes="Bold"/>
+        <Label x:Name="usernameLabel"/>
+
+        <Label Text="Email:" FontAttributes="Bold"/>
+        <Label x:Name="emailLabel"/>
+
+        <Label Text="Signup Successful!" TextColor="Green" FontSize="18" HorizontalOptions="Center"/>
+
+        <Button Text="Sign Out" Clicked="OnSignOutClicked"/>
+    </VerticalStackLayout>
+</ContentPage>
